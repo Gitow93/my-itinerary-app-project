@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h3 {
+  font-family: "Kalam", cursive;
+  color: #3c4f57;
+  text-align: center;
+}
+
+.search {
+  margin-left: 2.3rem;
+  width: 248px;
+  height: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
+}
+
+.search_icon {
+  position: relative;
+  left: 275px;
+  top: 6px;
+}
+
+.city_list {
+  display: grid;
+  grid-template-columns: auto;
+  list-style: none;
+  margin-left: 1.2rem;
+}
+
+.city_file {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  border: 5px solid rgb(41, 207, 237);
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: "Kalam", cursive;
+  color: rgb(41, 207, 237);
+  background-color: #3c4f57;
+}
+
+.addcity_container {
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.add_city,
+.add_country {
+  width: 100px;
+}
+
+.post_city {
+  position: relative;
+  height: 30px;
+  left: 40%;
+  margin-top: 1rem;
+  border: 2px solid #3c4f57;
+  border-radius: 10px;
+  font-family: "Kalam", cursive;
+  background-color: #00a0e5;
+  color: white;
+}
