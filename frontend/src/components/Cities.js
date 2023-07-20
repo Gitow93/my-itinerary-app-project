@@ -76,13 +76,13 @@ const Cities = () => {
                   {city.name}
                   {
                     <img
+                      className="city_picture"
                       src={city.imgUrl ? city.imgUrl : cityStamp}
                       alt={
                         city.imgUrl
                           ? `Imagen de la ciudad de ${city.name}`
                           : "Imagen por defecto"
                       }
-                      style={{ width: "240px", height: "200px" }}
                     />
                   }
                 </li>

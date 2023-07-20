@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import cityStamp from "../images/city.jpg";
 import "../containers/itinerary.css";
@@ -30,13 +31,13 @@ const Itinerary = () => {
           {itinerary?.map((itineraryInfo) => (
             <React.Fragment key={itineraryInfo._id}>
               <li className="itinerary_title">{itineraryInfo.title}</li>
-              <li className="itineary_rating">
+              <li className="itinerary_rating">
                 Puntuación: {itineraryInfo.rating}
               </li>
               <li>
                 {
                   <img
-                    className="itinerary_picture"
+                    className="profile_picture"
                     src={
                       itineraryInfo.profilePicture
                         ? itineraryInfo.profilePicture
@@ -58,7 +59,7 @@ const Itinerary = () => {
                       <ul>
                         {dayInfo.paragraphs.map((paragraph, paragraphIndex) => (
                           <li key={paragraphIndex}>
-                            <p>{paragraph.text}</p>
+                            <p className="text_container">{paragraph.text}</p>
                             {paragraph.image ? (
                               <img
                                 className="itinerary_picture"
@@ -77,6 +78,9 @@ const Itinerary = () => {
           ))}
         </ul>
       }
+      <footer>
+        <Link to="/cities">Todas las ciudades</Link>
+      </footer>
     </div>
   );
 };
